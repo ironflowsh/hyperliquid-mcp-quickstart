@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "ironflow": {
+      "type": "http",
+      "url": "https://mcp.ironflow.sh/mcp"
+    }
+  }
+}
