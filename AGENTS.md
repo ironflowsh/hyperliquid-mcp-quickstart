@@ -16,8 +16,8 @@ This folder connects MCP clients to Ironflow's hosted Hyperliquid MCP server at 
 - Start with `get_liquidations` or `get_liquidation_summary` for liquidations, `get_liquidation_map` for where open positions would be liquidated, `get_user_state` for a wallet, `get_markets_snapshot` and `get_candles` for market moves.
 - For anything else: `describe_data`, then `run_query` with one ClickHouse SELECT over the `hl.*` tables.
 - A result can start with a `notice`, for example that a window was cut to the key's history. Pass it on to the user.
-- Keyless: 30 requests a minute, 300 a day, 24 hours of history. A free key (https://ironflow.sh/key) gives 60 a minute and 14 days.
-- No tool places a Hyperliquid order. `create_ironbox` makes a paper box, a simulated account for testing a bot.
+- Keyless: 30 requests a minute, 100 credits a day, 24 hours of history. A free key (https://ironflow.sh/key) gives 60 a minute, 1,000 credits a day and 14 days.
+- No tool places a Hyperliquid order. Four tools manage liquidation alerts to Discord, Slack, Telegram or a webhook.
 
 ## Reference
 

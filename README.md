@@ -11,8 +11,8 @@ python check.py
 ```
 
 ```text
-Connected to Ironflow Hyperliquid 0.18.0 at https://mcp.ironflow.sh/mcp
-54 tools, e.g. describe_data, run_query, get_wallet_behavior, get_price, get_recent_trades, get_candles, get_funding_rates, get_open_interest
+Connected to Ironflow Hyperliquid 0.22.0 at https://mcp.ironflow.sh/mcp
+46 tools, e.g. describe_data, run_query, get_wallet_behavior, get_price, get_recent_trades, get_candles, get_funding_rates, get_open_interest
 Liquidations in the last 1h: 199 (longs $14,463, shorts $968,038)
 ```
 
@@ -52,7 +52,7 @@ The server is already set up for these clients in this folder:
 
 ## Limits and keys
 
-Without a key: 30 requests a minute, 300 a day and 24 hours of history. A free key from [ironflow.sh/key](https://ironflow.sh/key) gives 60 a minute and 14 days. Send it as the header `Authorization: Bearer if_your_key`:
+Without a key: 30 requests a minute, 100 credits a day and 24 hours of history. A free key from [ironflow.sh/key](https://ironflow.sh/key) gives 60 a minute, 1,000 credits a day and 14 days. Send it as the header `Authorization: Bearer if_your_key`:
 
 ```bash
 claude mcp add --transport http ironflow https://mcp.ironflow.sh/mcp --header "Authorization: Bearer if_your_key"
